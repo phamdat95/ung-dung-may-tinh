@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_tap</title>
+</head>
+<body>
+<form>
+    <input type="number" name="so_1" id="so_1">
+    <input type="number" name="so_2" id="so_2"><br>
+</form>
+<script>
+    function tong() {
+        var a = document.getElementById("so_1").value;
+        var b = document.getElementById("so_2").value;
+        var c = -(-a-b);
+        alert('Tổng = '+ c);
+    }
+    function tru() {
+        var a = document.getElementById("so_1").value;
+        var b = document.getElementById("so_2").value;
+        var d = a - b;
+        alert('Kết quả: '+d);
+    }
+    function tich() {
+        var a = document.getElementById("so_1").value;
+        var b = document.getElementById("so_2").value;
+        var e = a * b;
+        alert('Kết quả: '+e);
+    }
+    function chia() {
+        var a = document.getElementById("so_1").value;
+        var b = document.getElementById("so_2").value;
+        var f = a / b;
+        alert('Kết quả: '+f);
+    }
+</script>
+<button type="button" onclick="tong()">Addition(+)</button>
+<button type="button" onclick="tru()">Subtration(-)</button>
+<button type="button" onclick="tich()">Multiplication(x)</button>
+<button type="button" onclick="chia()">Division(/)</button>
+</body>
+</html>
